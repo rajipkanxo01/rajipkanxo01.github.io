@@ -1,0 +1,71 @@
+<section class="resume-section" id="contact">
+  <div class="resume-section-content">
+    <h2 class="mb-2">Contact</h2>
+    <div class="form_area">
+      <div class="form">
+        <!--        contact info-->
+        <div class="contact_info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            {{site.contact_description}}
+          </p>
+
+
+          <div class="info">
+            {% for item in site.data.about %}
+            <div class="information">
+              <i class="{{item.icon}}"></i>
+              <p>{{item.contact}}</p>
+            </div>
+            {%endfor%}
+          </div>
+
+          <div class="social_media title">
+            <p>Connect with me:</p>
+            <div class="social-icons">
+              {%for item in site.data.contact%}
+              <a class="social-icon" href="{{item.link}}" target="_blank"><i
+                      class="{{item.icon}}"></i></a>
+              {%endfor%}
+            </div>
+          </div>
+
+        </div>
+
+        <!--        contact form-->
+        <div class="contact_form">
+
+          <form action="https://getform.io/f/22056227-6869-4565-a75d-85001f207781" method="post">
+            <h3 class="title">Contact Us</h3>
+
+            <div class="input_container ">
+              <input type="text" name="Name" class="input" required>
+              <label for="">Full Name</label>
+              <span>Full Name</span>
+            </div>
+
+            <div class="input_container">
+              <input type="email" name="Email" class="input" required>
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+
+            <div class="input_container">
+              <input type="tel" name="Phone" class="input" required>
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+
+            <div class="input_container textarea">
+              <textarea name="Message" class="input" required></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="sendBtn" id="sendBtn">
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+- text: About
+  id: about
+
+- text: Education
+  id: education
+
+
+- text: Skills
+  id: skills
+
+
+- text: Interests
+  id: interests
+
+
+- text: Projects
+  id: projects
+
+
+#- text: Experience
+#  id: experience
+
+- text: Contact
+  id: contact
+
+
+

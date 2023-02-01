@@ -1,0 +1,20 @@
+<section class="resume-section" id="education">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Education</h2>
+
+    {% for item in site.data.education%}
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+      <div class="flex-grow-1">
+        <h3 class="mb-0">{{item["college"]}}</h3>
+        <div class="subheading mb-3">{{item["subheading"]}}</div>
+        <p> {{item["GPA"]}}</p>
+      </div>
+      <div class="flex-shrink-0"><span class="custom-text">{{item["date"]}}</span></div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+
+

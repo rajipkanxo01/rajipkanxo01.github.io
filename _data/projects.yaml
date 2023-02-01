@@ -1,0 +1,10 @@
+- name: Hotel Room Booking System
+  description: Developed a single user hotel room booking system as first semester project. The system allows a user
+    to search for available hotel rooms, select a room, and make a reservation. It is designed for
+    individual users and provides a user-friendly interface to manage hotel bookings. It
+    was built as software application and developed using technologies
+    such as Java and JavaFX.
+
+- name: Employer and Jobseeker Communication System
+  description: Developed a client/server system for communication between employer and job-seeker using Agile and Scrum as second semester
+      project. Learned about different design patterns, RMI and Socket.

@@ -1,0 +1,22 @@
+<!--{{site.data.about["last_name"]}}-->
+<!--this will get value of last_name from about file in data folder-->
+
+<section class="resume-section" id="about">
+  <div class="resume-section-content">
+    <h1 class="mb-0">
+      {{site.data.info["firstName"]}}
+      <span class="custom-text">{{site.data.info["lastName"]}}</span>
+    </h1>
+    <div class="subheading mb-5">
+      {{site.data.info["address"]}}
+    </div>
+    <p class="lead mb-5">{{site.data.info["description"]}}</p>
+    <div class="social-icons">
+
+      {% for item in site.data.contact%}
+      <a class="social-icon" href="{{item.link}}" target="_blank"><i class="{{item.icon}}"></i></a>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
